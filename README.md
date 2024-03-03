@@ -1,7 +1,7 @@
-# SOperiode5
+# NATIN Periode 5 Film Database
 
-##opdracht
-De opdracht voor periode 5 is om een CRUD (Create, Read, Update, Delete) applicatie in PHP met een MySQL database te ontwikkelen om een filmdatabase te beheren.
+## Opdracht
+Ontwikkel een **CRUD (Create, Read, Update, Delete)** applicatie in PHP met een MySQL database om een filmdatabase te beheren.
 
 ### Functionaliteiten
 - Beheerders kunnen films toevoegen, bewerken en verwijderen.
@@ -10,9 +10,21 @@ De opdracht voor periode 5 is om een CRUD (Create, Read, Update, Delete) applica
 - Gebruikers kunnen zoeken op titel, genre, regisseur en releasejaar.
 - Mogelijkheid om afbeeldingen te uploaden voor posters.
 - Gebruikers kunnen films beoordelen.
-- Gebruikers kunnen films downloaden.
-- Gebruikers kunnen films toevoengen aan favorites.
 - Optionele integratie met een API voor film details.
+
+
+### Op te leveren producten:
+- Logboek met voortgangsverslagen.
+- Ontwerp van de database (ERD diagram).
+- Functionele specificaties.
+- Voltooide database met testdata.
+- PHP code voor CRUD operaties.
+- Gebruikersinterface met HTML, CSS en formulieren.
+- Testplan en testresultaten.
+- Presentatie van de applicatie.
+
+
+## Project Starter Template
 
 ### Directorystructuur uitleg:
 
@@ -25,3 +37,13 @@ De opdracht voor periode 5 is om een CRUD (Create, Read, Update, Delete) applica
 - **`.gitignore`**: Dit bestand geeft aan welke bestanden en mappen moeten worden genegeerd door Git bij het bijhouden van wijzigingen in de repository.
 - **`index.php`**: Dit is de hoofdpagina van de applicatie waar gebruikers naartoe worden geleid wanneer ze de applicatie openen.
 - **`README.md`**: Een markdown-bestand met instructies en informatie over het project.
+
+### Richtlijnen:
+
+- **Gebruik van includes**: Scheid logica van presentatie door herbruikbare code in te sluiten, zoals de databaseverbinding en functies, in aparte bestanden in de includes/-map.
+- **Databaseverbinding**: Zorg ervoor dat alle pagina's die databasefunctionaliteit nodig hebben, de databaseverbinding includeren vanuit `includes/db_connection.php`.
+- **Bestandsnamen**: Geef PHP-bestanden zinvolle namen op basis van hun functie, bijvoorbeeld `add_movie.php`, `edit_movie.php`, enz.
+- **Beveiliging**: Implementeer beveiligingsmaatregelen, zoals inputvalidatie en het voorkomen van SQL-injectie, in PHP-bestanden die met de database communiceren.
+- **Documentatie**: Voeg commentaar toe aan je code om anderen (en jezelf) te helpen de code te begrijpen en te onderhouden.
+- **Versiebeheer**: Gebruik Git voor versiebeheer. Het .gitignore-bestand helpt bij het negeren van onnodige bestanden, zoals inloggegevens voor de database.
+- **Leesbaarheid**: Schrijf duidelijke, goed georganiseerde code die gemakkelijk te begrijpen en te onderhouden is.
