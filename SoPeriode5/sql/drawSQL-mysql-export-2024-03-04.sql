@@ -7,6 +7,7 @@ CREATE TABLE `Film` (
     `Description` LONGTEXT NOT NULL,
     `Poster` BLOB NOT NULL,
     `Rating` DECIMAL(8, 2) NOT NULL
+    
 );
 CREATE TABLE `Roles` (
     `RolesID` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
