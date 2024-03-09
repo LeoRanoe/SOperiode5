@@ -1,0 +1,201 @@
+/* Reset and general styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #5e5ce6;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styles */
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Center content vertically */
+}
+
+/* Registration section styles */
+.register-section {
+    text-align: center;
+}
+
+h2 {
+    color: #5e5ce6;
+}
+
+form {
+    margin-top: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Username, Email, Password, and Confirm Password input styles */
+.username,
+.email,
+.password,
+.confirm-password {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #5e5ce6;
+    font-size: 1rem;
+}
+
+input {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+button {
+    padding: 1rem;
+    background-color: #5e5ce6;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    width: 100%; /* Make the button fill the container */
+}
+
+button:hover {
+    background-color: #4a46b8;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #5e5ce6;
+    color: #fff;
+}
+
+/* Footer content styles */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Logo section in footer styles */
+.logo-footer-section {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-footer-section img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+/* Contact section in footer styles */
+.contact-section {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.contact-section h3,
+.social-section h3 {
+    color: #fff;
+}
+
+.contact-section p {
+    margin-bottom: 10px;
+}
+
+/* Additional styling for the footer text */
+.footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+/* Styles for the "Connect with Us" section */
+.social-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-section a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-section a:hover {
+    color: #ffd700;
+}
