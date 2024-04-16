@@ -1,0 +1,315 @@
+/* Reset and general styles */
+body {
+    background: linear-gradient(to bottom, #620202, #000000);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0; /* Increased padding */
+    z-index: 1000; /* Ensure header stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Header styles on hover */
+header:hover {
+    background-color: rgba(0, 0, 0, 0.95); /* Darker background color on hover */
+}
+
+/* Header container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* Logo and navigation */
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section img {
+    max-width: 50px;
+    margin-right: 10px;
+    animation: pulse 2s linear infinite; /* Add pulsing animation to logo */
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3rem; /* Adjusted font size */
+    transition: color 0.3s ease, transform 0.2s ease; /* Added transition for color and transform */
+}
+
+nav a:hover {
+    color: #ffd700;
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+/* Search bar container */
+.search-container {
+    text-align: right;
+    position: relative;
+}
+
+/* Search bar */
+.search-bar {
+    display: inline-flex;
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensure button doesn't extend outside the rounded border */
+}
+
+/* Search input */
+.search-bar input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    outline: none; /* Remove default input focus outline */
+    width: 200px; /* Adjust as needed */
+}
+/* Search Form */
+.search-form {
+    margin-top: 10px; /* Adjust as needed */
+    text-align: center;
+}
+
+.search-form input[type="text"] {
+    padding: 10px; /* Adjust as needed */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    outline: none;
+}
+
+.search-form button {
+    padding: 10px 20px; /* Adjust as needed */
+    background-color: #ff0000; /* Red background color */
+    border: none;
+    color: #ffffff; /* Button text color */
+    cursor: pointer;
+    border-radius: 20px; /* Rounded corners */
+    outline: none; /* Remove default focus outline */
+}
+
+.search-form button:hover {
+    background-color: #cc0000;
+}
+
+.search-form input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 0.7); /* Lighter background color on focus */
+}
+
+/* Search button */
+.search-bar button {
+    padding: 0.4rem 0.8rem;
+    background-color: #ff0000; /* Red background color */
+    border: none;
+    color: #ffffff; /* Button text color */
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 20px; /* Rounded corners */
+    outline: none; /* Remove default focus outline */
+}
+
+.search-bar button:active {
+    transform: scale(1.1); /* Scale up slightly when clicked */
+}
+/* Main content */
+.main-content {
+    background-color: white;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    flex-grow: 1;
+}
+
+.filters-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters-form select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgb(238, 237, 237)
+}
+
+/* Movies section styles */
+.movies-section {
+    padding: 20px;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Row styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px; /* Updated margin */
+}
+
+/* Movie poster container styles */
+.movie-poster-container {
+    flex-basis: 20%; /* Updated flex-basis */
+    padding: 20px; /* Adjusted padding */
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.movie-poster {
+    width: 150px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height as needed */
+    transition: transform 0.3s ease;
+    object-fit: cover; /* Ensure the image covers the specified dimensions */
+}
+
+/* Movie poster hover styles */
+.movie-poster:hover {
+    transform: scale(1.05);
+}
+
+/* Movie title styles */
+h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* No movies found message */
+.no-movies-msg {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    background-color: black;
+    opacity: 0.9;
+}
+
+/* Only animate logo in footer */
+.logo-footer-section img {
+    animation: pulse 2s linear infinite;
+}
+
+.footer-content button {
+    padding: 0.5rem 1rem;
+    background-color: #5e5ce6;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    outline: none;
+}
+
+.footer-content button:hover {
+    background-color: #4d4bbf;
+}
+
+/* Button animation */
+.button-animation {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Logo section in footer styles */
+.logo-footer-section {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contact section in footer styles */
+.contact-section {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+/* Additional styling for the footer text */
+.footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 20px;
+}
+
+/* Styles for the "Connect with Us" section */
+.social-section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-section a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-section a:hover {
+    color: #ffd700;
+}
